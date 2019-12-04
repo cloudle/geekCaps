@@ -60,3 +60,7 @@ export type RouterHistory = {
 	replace?: Function,
 	location?: RouterLocation,
 };
+
+export type GeekCapsConfig = {
+	capsKey?: String,
+};

@@ -6,6 +6,7 @@ module.exports = {
 		'flowtype',
 	],
 	rules: {
+		'max-len': ['error', { code: 120 }],
 		'func-names': ['error', 'never'],
 		'no-tabs': 'off',
 		'global-require': 'off',

@@ -19,6 +19,7 @@ if (!isProduction) { /* <- hot reload server-side code on development mode */
 	watcher.on('all', (event, filename) => {
 		console.log(chalk.magenta('hot code reload'), chalk.green(filename), 'updated.');
 		invalidate(path.resolve(filename));
+		require('./src/generator/karabiner')();
 	});
 }
 
