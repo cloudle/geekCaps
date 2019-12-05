@@ -3,13 +3,13 @@ import { GeekCapsConfig, } from '../../typeDefinition';
 
 export default function getRules(globalConfigs: GeekCapsConfig) {
 	const geekNavigation = generateGroup(globalConfigs, 'Geek Navigation', [
-		...generateManipulators('j', 'left_arrow', [
+		...generateManipulators('h', 'left_arrow', [
 			[[], [], 'Left arrow'],
 			[[i.command], [i.shift]],
 			[[i.shift], [i.option]],
 			[[i.command, i.shift], [i.option, i.shift]],
 		]),
-		...generateManipulators('k', 'down_arrow', [
+		...generateManipulators('j', 'down_arrow', [
 			[[], [], 'Down arrow'],
 			[[i.command], [i.shift]],
 			[[i.shift], [i.option]],
@@ -21,7 +21,7 @@ export default function getRules(globalConfigs: GeekCapsConfig) {
 			[[i.shift], [i.option]],
 			[[i.command, i.shift], [i.option, i.shift]],
 		]),
-		...generateManipulators('i', 'up_arrow', [
+		...generateManipulators('k', 'up_arrow', [
 			[[], [], 'Up arrow'],
 			[[i.command], [i.shift]],
 			[[i.shift], [i.option]],
@@ -90,7 +90,7 @@ export default function getRules(globalConfigs: GeekCapsConfig) {
 		]),
 	]);
 
-	const geekDeletion = generateGroup(globalConfigs,'Geek Deletion', [
+	const geekDeletion = generateGroup(globalConfigs, 'Geek Deletion', [
 		...generateManipulators('n', 'delete_or_backspace', [
 			[[], [i.option], 'Delete word'],
 			[[i.command], [i.command], 'Delete line'],
@@ -100,6 +100,27 @@ export default function getRules(globalConfigs: GeekCapsConfig) {
 		]),
 		...generateManipulators('m', 'delete_forward', [
 			[[i.command], [], 'Delete character'],
+		]),
+	]);
+
+	const geekBash = generateGroup(globalConfigs, 'Geek Bash', [
+		...generateManipulators('z', 'z', [
+			[[], [i.ctrl], 'SIGTSTP'],
+		]),
+		...generateManipulators('x', 'x', [
+			[[], [i.ctrl], 'IDE Run'],
+		]),
+		...generateManipulators('c', 'c', [
+			[[], [i.ctrl], 'SIGINT'],
+		]),
+		...generateManipulators('v', 'v', [
+			[[], [i.ctrl], 'Vim Prefix'],
+		]),
+		...generateManipulators('b', 'b', [
+			[[], [i.ctrl], 'Tmux Prefix'],
+		]),
+		...generateManipulators('d', 'd', [
+			[[], [i.ctrl], 'EOF'],
 		]),
 	]);
 
@@ -137,6 +158,7 @@ export default function getRules(globalConfigs: GeekCapsConfig) {
 		geekNavigation,
 		geekShifter,
 		geekDeletion,
+		geekBash,
 		geekDeveloper,
 		geekMisc,
 	];
