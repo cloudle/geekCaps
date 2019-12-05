@@ -144,7 +144,7 @@ export default function getRules(globalConfigs: GeekCapsConfig) {
 		]),
 	]);
 
-	const geekMisc = generateGroup(globalConfigs, 'Geek Developer', [
+	const geekMisc = generateGroup(globalConfigs, 'Geek Misc', [
 		...generateManipulators('escape', 'grave_accent_and_tilde', [
 			[[], [i.shift], 'Esc to ~'],
 			[[i.command], [], 'Esc to `'],
