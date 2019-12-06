@@ -1,0 +1,142 @@
+export const defaultKeyConfigs = [[{
+	caption: 'Esc',
+	color: '#ff3a26',
+}, {
+	caption: '1',
+}, {
+	caption: '2',
+}, {
+	caption: '3',
+}, {
+	caption: '4',
+}, {
+	caption: '5',
+}, {
+	caption: '6',
+}, {
+	caption: '7',
+}, {
+	caption: '8',
+}, {
+	caption: '9',
+}, {
+	caption: '0',
+}, {
+	caption: '-',
+}, {
+	caption: '=',
+}, {
+	caption: '\\',
+}, {
+	caption: '`',
+	size: 1,
+}, ], [{
+	caption: 'Tab',
+	size: 1.6,
+}, {
+	caption: 'q',
+}, {
+	caption: 'w',
+}, {
+	caption: 'e',
+}, {
+	caption: 'r',
+}, {
+	caption: 't',
+}, {
+	caption: 'y',
+}, {
+	caption: 'u',
+}, {
+	caption: 'i',
+}, {
+	caption: 'o',
+}, {
+	caption: 'p',
+}, {
+	caption: '[',
+}, {
+	caption: ']',
+}, {
+	caption: 'Del',
+	size: 1.58,
+}, ], [{
+	caption: 'Caps Lock',
+	size: 2,
+}, {
+	caption: 'a',
+}, {
+	caption: 's',
+}, {
+	caption: 'd',
+}, {
+	caption: 'f',
+}, {
+	caption: 'g',
+}, {
+	caption: 'h',
+}, {
+	caption: 'j',
+}, {
+	caption: 'k',
+}, {
+	caption: 'l',
+}, {
+	caption: ';',
+}, {
+	caption: '\'',
+}, {
+	caption: 'Return',
+	size: 2.38,
+	color: '#ff3a26',
+	onPress: () => {
+		console.log("Hey, you're pressing Return!");
+	},
+}, ], [{
+	caption: 'Shift',
+	size: 2.18,
+}, {
+	caption: 'z',
+}, {
+	caption: 'x',
+}, {
+	caption: 'c',
+}, {
+	caption: 'v',
+}, {
+	caption: 'b',
+}, {
+	caption: 'n',
+}, {
+	caption: 'm',
+}, {
+	caption: ',',
+}, {
+	caption: '.',
+}, {
+	caption: '/',
+}, {
+	caption: 'Shift',
+	size: 2.18,
+}, {
+	caption: 'Fn',
+	size: 1,
+}, ], [{
+	hidden: true,
+	size: 1.5,
+}, {
+	caption: 'Fn',
+	size: 1,
+}, {
+	caption: 'Cmd',
+	size: 1.25,
+}, {
+	caption: '',
+	size: 8.5,
+}, {
+	caption: 'Cmd',
+	size: 1.25,
+}, {
+	caption: 'Fn',
+	size: 1,
+}, ]];

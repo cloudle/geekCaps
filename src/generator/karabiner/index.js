@@ -24,7 +24,6 @@ module.exports = function (configs: GeekCapsConfig = {}) {
 		rules,
 	};
 
-	console.log(util.inspect(karabinerConfigs.rules, true, 12, true));
 	writeFile('/Users/le/.config/karabiner/assets/complex_modifications/capslock.json',
 		JSON.stringify(karabinerConfigs, null, '\t'),
 		() => {
