@@ -7,16 +7,20 @@ import { defaultKeyConfigs, } from './utils';
 type Props = {
 	color?: String,
 	keyConfig?: Array<Array>,
+	onKeyPress?: Function,
 };
 
 function Keyboard(props: Props) {
-	const { keyConfig, color, } = props,
+	const { keyConfig, color, onKeyPress, } = props,
 		containerStyle = { backgroundColor: color, };
 
 	return <View style={[styles.container, containerStyle]}>
 		{keyConfig.map((row, i) => {
 			return <View key={i} style={styles.rowContainer}>
-				{row.map((keyProps, y) => <KeyCap key={y} {...keyProps}/>)}
+				{row.map((keyProps, y) => <KeyCap
+					key={y}
+					onPress={onKeyPress}
+					{...keyProps}/>)}
 			</View>;
 		})}
 	</View>;

@@ -89,9 +89,6 @@ export const defaultKeyConfigs = [[{
 	caption: 'Return',
 	size: 2.38,
 	color: '#ff3a26',
-	onPress: () => {
-		console.log("Hey, you're pressing Return!");
-	},
 }, ], [{
 	caption: 'Shift',
 	size: 2.18,

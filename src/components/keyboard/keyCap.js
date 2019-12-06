@@ -18,7 +18,7 @@ function KeyCap(props: Props) {
 	return <TouchableOpacity
 		activeOpacity={0.8}
 		style={[styles.container, containerStyle]}
-		onPress={onPress}>
+		onPress={e => onPress(props, e)}>
 		{!hidden && <Text style={styles.captionText}>{caption}</Text>}
 	</TouchableOpacity>;
 }

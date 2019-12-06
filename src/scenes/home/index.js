@@ -21,9 +21,17 @@ class HomeScene extends Component {
 
 	render() {
 		return <View style={styles.container}>
-			<EmulatedKeyboard color="#4c4c4c"/>
+			<EmulatedKeyboard
+				color="#4c4c4c"
+				onKeyPress={this.onKeyPress}/>
 		</View>;
 	}
+
+	onKeyPress = ({ caption }, e) => {
+		if (caption === 'Return') {
+			alert('Yay!');
+		}
+	};
 }
 
 export default HomeScene;
