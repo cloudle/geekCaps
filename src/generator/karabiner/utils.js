@@ -85,4 +85,7 @@ export const Modifiers = {
 	ctrl: {
 		key: 'left_control',
 	},
+	fn: {
+		key: 'fn',
+	},
 };

@@ -103,6 +103,28 @@ export default function getRules(globalConfigs: GeekCapsConfig) {
 		]),
 	]);
 
+	const geekWindowControl = generateGroup(globalConfigs, 'Geek Window Control', [
+		...generateManipulators('tab', 'tab', [
+			[[], [i.command], 'Switch Window'],
+			[[i.command], [i.command, i.shift], 'Switch Window Reverse'],
+		]),
+		...generateManipulators('q', 'q', [
+			[[], [i.command], 'Close Window'],
+		]),
+		...generateManipulators('q', 'escape', [
+			[[i.command], [i.command, i.shift, i.option], 'Force Kill Application'],
+		]),
+		...generateManipulators('w', 'w', [
+			[[], [i.command], 'Close Tab'],
+		]),
+		...generateManipulators('a', 'f11', [
+			[[], []],
+		]),
+		...generateManipulators('a', 'f4', [
+			[[i.command], [i.fn]],
+		]),
+	]);
+
 	const geekBash = generateGroup(globalConfigs, 'Geek Bash', [
 		...generateManipulators('z', 'z', [
 			[[], [i.ctrl], 'SIGTSTP'],
@@ -146,8 +168,8 @@ export default function getRules(globalConfigs: GeekCapsConfig) {
 
 	const geekMisc = generateGroup(globalConfigs, 'Geek Misc', [
 		...generateManipulators('escape', 'grave_accent_and_tilde', [
-			[[], [i.shift], 'Esc to ~'],
-			[[i.command], [], 'Esc to `'],
+			[[], [], 'Esc to `'],
+			[[i.command], [i.shift], 'Esc to ~'],
 		]),
 		...generateManipulators('delete_or_backspace', 'delete_forward', [
 			[[], [], 'Delete character backward'],
@@ -158,6 +180,7 @@ export default function getRules(globalConfigs: GeekCapsConfig) {
 		geekNavigation,
 		geekShifter,
 		geekDeletion,
+		geekWindowControl,
 		geekBash,
 		geekDeveloper,
 		geekMisc,
