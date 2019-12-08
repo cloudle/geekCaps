@@ -34,25 +34,25 @@ export const defaultKeyConfigs = [[{
 	caption: 'Tab',
 	size: 1.5,
 }, {
-	caption: 'q',
+	caption: 'Q',
 }, {
-	caption: 'w',
+	caption: 'W',
 }, {
-	caption: 'e',
+	caption: 'E',
 }, {
-	caption: 'r',
+	caption: 'R',
 }, {
-	caption: 't',
+	caption: 'T',
 }, {
-	caption: 'y',
+	caption: 'Y',
 }, {
-	caption: 'u',
+	caption: 'U',
 }, {
-	caption: 'i',
+	caption: 'I',
 }, {
-	caption: 'o',
+	caption: 'O',
 }, {
-	caption: 'p',
+	caption: 'P',
 }, {
 	caption: '[',
 }, {
@@ -64,23 +64,23 @@ export const defaultKeyConfigs = [[{
 	caption: 'Caps Lock',
 	size: 1.9,
 }, {
-	caption: 'a',
+	caption: 'A',
 }, {
-	caption: 's',
+	caption: 'S',
 }, {
-	caption: 'd',
+	caption: 'D',
 }, {
-	caption: 'f',
+	caption: 'F',
 }, {
-	caption: 'g',
+	caption: 'G',
 }, {
-	caption: 'h',
+	caption: 'H',
 }, {
-	caption: 'j',
+	caption: 'J',
 }, {
-	caption: 'k',
+	caption: 'K',
 }, {
-	caption: 'l',
+	caption: 'L',
 }, {
 	caption: ';',
 }, {
@@ -93,19 +93,19 @@ export const defaultKeyConfigs = [[{
 	caption: 'Shift',
 	size: 2.4,
 }, {
-	caption: 'z',
+	caption: 'Z',
 }, {
-	caption: 'x',
+	caption: 'X',
 }, {
-	caption: 'c',
+	caption: 'C',
 }, {
-	caption: 'v',
+	caption: 'V',
 }, {
-	caption: 'b',
+	caption: 'B',
 }, {
-	caption: 'n',
+	caption: 'N',
 }, {
-	caption: 'm',
+	caption: 'M',
 }, {
 	caption: ',',
 }, {
