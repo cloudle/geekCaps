@@ -32,7 +32,7 @@ export const defaultKeyConfigs = [[{
 	size: 1,
 }, ], [{
 	caption: 'Tab',
-	size: 1.6,
+	size: 1.5,
 }, {
 	caption: 'q',
 }, {
@@ -59,10 +59,10 @@ export const defaultKeyConfigs = [[{
 	caption: ']',
 }, {
 	caption: 'Del',
-	size: 1.58,
+	size: 1.7,
 }, ], [{
 	caption: 'Caps Lock',
-	size: 2,
+	size: 1.9,
 }, {
 	caption: 'a',
 }, {
@@ -87,11 +87,11 @@ export const defaultKeyConfigs = [[{
 	caption: '\'',
 }, {
 	caption: 'Return',
-	size: 2.38,
+	size: 2.5,
 	color: '#ff3a26',
 }, ], [{
 	caption: 'Shift',
-	size: 2.18,
+	size: 2.4,
 }, {
 	caption: 'z',
 }, {
@@ -114,15 +114,15 @@ export const defaultKeyConfigs = [[{
 	caption: '/',
 }, {
 	caption: 'Shift',
-	size: 2.18,
+	size: 2,
 }, {
 	caption: 'Fn',
 	size: 1,
 }, ], [{
 	hidden: true,
-	size: 1.5,
+	size: 3,
 }, {
-	caption: 'Fn',
+	caption: 'Alt',
 	size: 1,
 }, {
 	caption: 'Cmd',
@@ -134,6 +134,6 @@ export const defaultKeyConfigs = [[{
 	caption: 'Cmd',
 	size: 1.25,
 }, {
-	caption: 'Fn',
+	caption: 'Alt',
 	size: 1,
 }, ]];

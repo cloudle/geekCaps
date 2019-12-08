@@ -32,7 +32,7 @@ KeyCap.defaultProps = {
 
 export default KeyCap;
 
-const keyCapSize = 60;
+const keyCapSize = 50;
 
 const styles = StyleSheet.create({
 	container: {
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
 		height: keyCapSize,
 		borderRadius: 5,
 		justifyContent: 'center',
-		margin: 6,
+		margin: 5,
 	},
 	captionText: {
 		textAlign: 'center',
