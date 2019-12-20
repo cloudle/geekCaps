@@ -123,6 +123,15 @@ export default function getRules(globalConfigs: GeekCapsConfig) {
 		...generateManipulators('a', 'f4', [
 			[[i.command], [i.fn]],
 		]),
+		...generateManipulators('i', 'up_arrow', [
+			[[], [i.ctrl]],
+		]),
+		...generateManipulators('o', 'left_arrow', [
+			[[i.option], [i.ctrl]],
+		]),
+		...generateManipulators('u', 'right_arrow', [
+			[[i.option], [i.ctrl]],
+		]),
 	]);
 
 	const geekBash = generateGroup(globalConfigs, 'Geek Bash', [
