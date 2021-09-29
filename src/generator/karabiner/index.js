@@ -10,7 +10,7 @@ module.exports = function (configs: GeekCapsConfig = {}) {
 		{ capsKey, } = globalConfigs,
 		capsFrom = { key_code: capsKey, modifiers: { optional: ['any'], }, },
 		capsTo = [{ key_code: 'right_shift', modifiers: essentialModifiers, }],
-		capsManipulators = [{ from: capsFrom, to: capsTo, to_if_alone: [{ key_code: 'caps_lock' }], type: 'basic', }],
+		capsManipulators = [{ from: capsFrom, to: capsTo, to_if_alone: [{ key_code: 'escape' }], type: 'basic', }],
 		capsRule = generateGroup(globalConfigs, 'CapsLock to GeekCaps', capsManipulators),
 		rules = [capsRule, ...generateOtherRules(globalConfigs)];
 

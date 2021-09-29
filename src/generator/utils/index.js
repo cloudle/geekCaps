@@ -2,7 +2,7 @@ import { merge, } from 'lodash';
 
 export const generateConfigs = (configs, platform) => {
 	return merge({
-		capsKey: platformSelect({ win32: '', darwin: 'left_control' }, platform),
+		capsKey: platformSelect({ win32: '', darwin: 'caps_lock' }, platform),
 	}, configs);
 };
 
