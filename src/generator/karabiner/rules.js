@@ -126,10 +126,10 @@ export default function getRules(globalConfigs: GeekCapsConfig) {
 		...generateManipulators('i', 'up_arrow', [
 			[[], [i.ctrl]],
 		]),
-		...generateManipulators('o', 'left_arrow', [
+		...generateManipulators('o', 'right_arrow', [
 			[[i.option], [i.ctrl]],
 		]),
-		...generateManipulators('u', 'right_arrow', [
+		...generateManipulators('u', 'left_arrow', [
 			[[i.option], [i.ctrl]],
 		]),
 	]);
@@ -175,6 +175,12 @@ export default function getRules(globalConfigs: GeekCapsConfig) {
 		]),
 	]);
 
+	const vimEditor = generateGroup(globalConfigs, 'Vim Editor', [
+		...generateManipulators('s', 's', [
+			[[], [i.ctrl], 'Ctrl + S, for i.e Lunarvim'],
+		]),
+	]);
+
 	const geekMisc = generateGroup(globalConfigs, 'Geek Misc', [
 		...generateManipulators('escape', 'grave_accent_and_tilde', [
 			[[], [], 'Esc to `'],
@@ -192,6 +198,7 @@ export default function getRules(globalConfigs: GeekCapsConfig) {
 		geekWindowControl,
 		geekBash,
 		geekDeveloper,
+		vimEditor,
 		geekMisc,
 	];
 }

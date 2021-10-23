@@ -5,12 +5,19 @@ import { generateConfigs, } from '../utils';
 import { generateGroup, essentialModifiers } from './utils';
 import { GeekCapsConfig, } from '../../typeDefinition';
 
+const gitUrl = 'https://raw.githubusercontent.com/cloudle/geekCaps/master/exports/karabiner.json';
+
 module.exports = function (configs: GeekCapsConfig = {}) {
 	const globalConfigs = generateConfigs(configs, 'darwin'),
 		{ capsKey, } = globalConfigs,
 		capsFrom = { key_code: capsKey, modifiers: { optional: ['any'], }, },
 		capsTo = [{ key_code: 'right_shift', modifiers: essentialModifiers, }],
-		capsManipulators = [{ from: capsFrom, to: capsTo, to_if_alone: [{ key_code: 'escape' }], type: 'basic', }],
+		capsManipulators = [{
+			from: capsFrom,
+			to: capsTo,
+			to_if_alone: [{ key_code: 'caps_lock' }],
+			type: 'basic',
+		}],
 		capsRule = generateGroup(globalConfigs, 'CapsLock to GeekCaps', capsManipulators),
 		rules = [capsRule, ...generateOtherRules(globalConfigs)];
 
@@ -20,7 +27,7 @@ module.exports = function (configs: GeekCapsConfig = {}) {
 		homepage: 'https://github.com/cloudle/geekCaps',
 		hostpage: 'https://pqrs.org/osx/karabiner/complex_modifications/',
 		manual: 'https://github.com/cloudle/geekCaps/blob/master/exports/',
-		import_url: 'karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/cloudle/geekCaps/master/exports/karabiner.json',
+		import_url: `karabiner://karabiner/assets/complex_modifications/import?url=${gitUrl}`,
 		rules,
 	};
 
